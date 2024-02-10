@@ -23,7 +23,7 @@ dependencyResolutionManagement {
 ```kotlin
 dependencies {
 //    Add following
-    implementation("com.github.tejas-bhong:VerticalMaterialSlider:v1.0")
+    implementation("com.github.tejas-bhong:VerticalMaterialSlider:latest_version_here")
 }
 ```
 3. use `VerticalMaterialSlider` in your layout:

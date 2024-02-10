@@ -33,17 +33,17 @@ android {
     }
 }
 
-val sourcesJar by tasks.registering(Jar::class) {
-    archiveClassifier.set("sources")
-    from(android.sourceSets.getByName("main").java.srcDirs)
-}
+//val sourcesJar by tasks.registering(Jar::class) {
+//    archiveClassifier.set("sources")
+//    from(android.sourceSets.getByName("main").java.srcDirs)
+//}
 
 afterEvaluate {
     publishing {
         publications {
             val release by publications.registering(MavenPublication::class) {
                 from(components["release"])
-                artifact(sourcesJar.get())
+//                artifact(sourcesJar.get())
                 artifactId = "VerticalMaterialSlider"
                 groupId = "com.github.tejas-bhong"
                 version = "v1.0"
